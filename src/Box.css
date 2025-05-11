@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent{
+  padding: 0;
+  background-color: beige;
+  /* width: 900px; */
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* padding: 0 100px; */
+}
+
+.parent .square{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  z-index: 2;
+}
+
+.parent .line{
+  width: 200px;
+  height: 10px;
+  background-color: red;
+position: absolute;
+animation-name: line_;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-duration: 2s;
+animation-fill-mode: both;
+animation-direction: normal;
+/* transform: translateX(100%); */
+}
+
+@keyframes line_ {
+  0% {
+   right: 0;
+  }
+
+  25% {
+   right: 25%;
+  }
+
+  50% {
+   right: 50%;
+  }
+
+   75% {
+   right: 75%;
+  }
+
+  100% {
+     right:100%;
+
+  }
+}
+
+
